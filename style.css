@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2 linear;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+.main{
+    height: 500px;
+    width: 500px;
+    background-color: #161B22;
+    color: #E6EDF3;
+    padding: 20px;
+    margin: 80px;
+    border-radius: 30px;
+}
+
+.btn-side .button{
+    border: 1px solid gray;
+    color: #E6EDF3;
+    background-color: #161B22;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+   display: inline-block;
+    padding:15px 70px 15px ;
+    border-radius: 10px;
+    width:auto;
+}
+.btn-side .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  .btn-side .button:hover {
+    background-color: gray;
+  }
+
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar a{
+    position: relative;
+    padding:15px 5px 15px;
+    color:#E6EDF3;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .navbar a::before{
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: orangered;
+  }
+
+  .navbar a:hover::before{
+    width:100%
+  }
+
+.btn-group .button{
+    border:1px solid gray;
+    color: white;
+    background-color: #161B22;
+    padding: 15px 45% 15px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor:pointer;
+    width:100%;
+    display: block;
+
+}
+
+.btn-group .icon{
+    padding-left:0px ;
+    padding-right: 10px;
+}
+
+  
+  .btn-group .button:hover {
+    background-color: gray;
+  }

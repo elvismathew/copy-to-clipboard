@@ -17,8 +17,8 @@ html{
 }
 
 .main{
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 490px;
     background-color: #161B22;
     color: #E6EDF3;
     padding: 20px;
@@ -26,6 +26,18 @@ html{
     border-radius: 30px;
 }
 
+.alt .clone{
+  padding: 20px 10px;
+  float: left;
+  font-size: 16px;
+ display: block;
+ clear: left;
+}
+
+.alt .second-icon{
+  float:right;
+  padding: 20px 10px;
+}
 .btn-side .button{
     border: 1px solid gray;
     color: #E6EDF3;
@@ -50,33 +62,28 @@ html{
   }
 
   .navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    clear:both;
   }
-
-  .navbar a{
-    position: relative;
-    padding:15px 5px 15px;
-    color:#E6EDF3;
+  .navbar .nav{
+    border: 1px solid gray;
+    color: #E6EDF3;
+    background-color: #161B22;
+    text-align: center;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
+    border:none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    padding:10px 15px  ;
+    border-radius: 10px;
+    width:auto;
   }
 
-  .navbar a::before{
-    content: " ";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: orangered;
+  .navbar .nav:hover{
+    background-color: gray;
   }
-
-  .navbar a:hover::before{
-    width:100%
-  }
-
 .btn-group .button{
     border:1px solid gray;
     color: white;
@@ -99,4 +106,18 @@ html{
   
   .btn-group .button:hover {
     background-color: gray;
+  }
+
+  .textfield input{
+    width: 85%;
+    padding: 8px 5px;
+    background-color: #161B22;
+    border: 1px solid gray;
+    color: #E6EDF3;
+  }
+
+  .para p{
+    font-size: 16px;
+    padding: 15px 10px;
+    color: gray;
   }

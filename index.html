@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!--link for css file-->
     <link rel="stylesheet" href="style.css">
+
     <!-- link for logos-->
     <script src="https://kit.fontawesome.com/59cb72ff68.js" crossorigin="anonymous"></script>
+
+    <!--link for js file -->
+    <script src="file.js"></script>
 </head>
 <body>
     <div class="main">
@@ -17,7 +23,7 @@
     
     <div class="alt">
     <span class="clone"><i class="fa fa-terminal" aria-hidden="true">Clone</i></span>
-    <span class="second-icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+    <span class="second-icon" style="color: gray;"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
     </div>
     <div class="navbar">
         <button class="nav">HTTPS</button>
@@ -25,10 +31,13 @@
         <button class="nav">GitHub CLI</button>
     </div>
 
+    
+    <span class="text"><input type="textfield" value="git@github.com:elvismathew/copy-to-clipboard.git" id="myInput"></span>
     <div class="textfield">
-        <input type="textfield" value="git@github.com:elvismathew/copy-to-clipboard.git">
-        <span><i class="fa fa-clone" aria-hidden="true"></i></span>
+        <button class="copy" onclick="myFunc()" onmouseout="outFunc()"><i class="fa fa-clone" aria-hidden="true"></i></button>
+        <span class="tooltiptext">Copy url to clipboard</span>
     </div>
+    
 
     <div class="para">
     <p>Use a password-protected SSH key.</p>

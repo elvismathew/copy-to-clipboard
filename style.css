@@ -22,7 +22,7 @@ html{
     background-color: #161B22;
     color: #E6EDF3;
     padding: 20px;
-    margin: 80px;
+    margin: 100px;
     border-radius: 30px;
 }
 
@@ -124,7 +124,7 @@ html{
     color: gray;
   }
 
-  .textfield .copy{
+  .textfield #originalButton{
     height: auto;
     width: auto;
     border: none;
@@ -135,7 +135,7 @@ html{
     border-radius: 10px;
   }
 
-  .textfield .copy:hover{
+  .textfield #originalButton:hover{
     background-color: gray;
   }
 
@@ -187,3 +187,16 @@ html{
       visibility: visible;
       opacity: 1;
     }
+
+    .textfield #newButton{
+      height: auto;
+      width: auto;
+      border: none;
+      background-color: #161B22;
+      color: greenyellow;
+      padding: 12px 10px;
+      font-size: 20px;
+      border-radius: 10px;
+    }
+  
+    

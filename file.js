@@ -18,4 +18,3 @@ function outFunc(){
     var tooltip = document.getElementsByClassName("copy");
     tooltip.innerHTML = "Copy url to clipboard";
 }
-
